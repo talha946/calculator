@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student GPA Calculator</h1>
+
+        <div id="course-container">
+            <div class="course-card">
+                <input type="text" placeholder="Course Name" class="course-name">
+                <div class="input-row">
+                    <input type="text" placeholder="Grade (A, B, C, D, F)" class="grade">
+                    <input type="number" placeholder="Credit Hours" class="credits" min="0">
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="add-course">+ Add Course</button>
+            <button id="calculate-gpa">Calculate GPA</button>
+        </div>
+
+        <h2 id="result">GPA: <span id="gpa-value">0.00</span></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
